@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Akinator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>akinator</title>
+    <link rel="stylesheet" href="Akinator2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo_akinator.webp">
+    </header>
+    <section id="seccion1">
+        <img id="akinator_fases" src="img/Akinator_Fase1.webp">
+        <div id="conenido">
+            <div id="pregunta">
+                <p id="responde">Es animacions</p>
+            </div>
+            <div id="opciones">
+                <button class="opcion" id="si" onclick="Respuesta('Si')">Si</button>
+                <button class="opcion" id="no" onclick="Respuesta('No')">No</button>
+                <button id="JugarOtravez" class="opcion" onclick="VuelveAJugar()" style="display: none;">Volver a jugar</button>
+            </div>
+        </div>
+        <div id="ResultadoFinal" style="display: none">
+            <p class="serieEs">La serie es:</p>
+            <h2 id="Titulo">.</h2>
+            <img id="ResultadoImagen" src="">
+        </div>
+    </section>
+    <script src="akinator.js"></script>
+</body>
+
+</html>

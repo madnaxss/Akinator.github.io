@@ -1,0 +1,147 @@
+p
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#seccion1
+{
+    display: flex;
+    align-items: center;
+    background-image: url('img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+body
+{
+    background-color: rgba(79, 152, 236, 0.966);
+}
+
+header img
+{
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+#imagen
+{
+    background-image: url("img/bafarada.png");
+}
+
+#pregunta
+{
+    padding: 30px;
+    margin-bottom: 10px;
+    background-image: url('img/bafarada2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+    position: absolute;
+    max-width: 300px;
+    top: 110px;
+    left: 470px; 
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+#pregunta p
+{
+    margin: 20px;
+}
+#opciones
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.serieEs {
+    font-size: 40px !important;
+    color: orange !important;
+}
+
+#ResultadoImagen {
+    height: 600px;
+    width: 400px;
+}
+
+#Titulo {
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    border-radius: 30px;
+    font-size: 30px !important;
+    color: rgb(255, 153, 0) !important;   
+}
+
+
+.opcion
+{
+    width: 160px;
+    background-color: white;
+    border: none;
+    transition: background 0.3s, color 0.3s, transform 0.4s;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.opcion:hover
+{
+    background:rgba(79, 152, 236, 0.966);
+    transform: scale(1.1);
+    color: white;
+}
+
+#contenido
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#akinator_fases
+{
+    height: 800px;
+    width: 600px;
+    padding-left: 60px;
+}
+
+
+@media (max-width: 980px) {
+
+    #opciones
+    {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 50px;
+
+    }
+    #seccion1
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 110vh;
+    }
+    #pregunta
+    {
+        position:static;
+        background-image: url('img/bafarada3.png');
+    }
+    #conenido
+    {
+        position: absolute;
+        bottom: 0px;
+        top: 600px;
+    }
+    #akinator_fases{
+        padding-left: 0px;
+        height: 600px;
+        width: 400px;
+    }
+
+}
